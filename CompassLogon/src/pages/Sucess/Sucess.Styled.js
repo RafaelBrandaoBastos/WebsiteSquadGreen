@@ -5,10 +5,16 @@ export const SucessBody = styled.div`
   flex-direction: row;
   justify-content: space-between;
   align-items: flex-end;
-  width: 98vw;
+  max-width: 98vw;
   min-height: 68.7vh;
   font-family: Poppins;
   min-height: 33vh;
+  -webkit-touch-callout: none;
+  -webkit-user-select: none;
+  -khtml-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
   @media screen {
     height: 100%;
   }
@@ -22,8 +28,7 @@ export const SucessImage = styled.div`
   background-size: contain;
   background-position: left bottom;
   @media (max-width: 768px) {
-    background-size: cover;
-    width: 50vw;
+    width: 90vw;
     height: 65vh;
   }
 `;

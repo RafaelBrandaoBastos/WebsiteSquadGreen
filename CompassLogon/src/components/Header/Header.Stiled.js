@@ -3,7 +3,13 @@ export const HeaderBody = styled.div`
   display: flex;
   justify-content: space-between;
   font-family: Poppins;
-  height: 100%;
+  height: 18.4vh;
+  -webkit-touch-callout: none;
+  -webkit-user-select: none;
+  -khtml-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
 `;
 export const HeaderImage = styled.img`
   width: 18vw;

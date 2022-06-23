@@ -9,6 +9,16 @@ export const FooterBody = styled.div`
   color: #f9f9f9;
   justify-content: space-between;
   align-items: center;
+  -webkit-touch-callout: none;
+  -webkit-user-select: none;
+  -khtml-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  @media (max-width: 768px) {
+    justify-content: space-between;
+    height: 16.7vh;
+  }
 `;
 export const FooterP = styled.p`
   display: flex;
@@ -20,8 +30,9 @@ export const FooterP = styled.p`
   border-right: 1px solid #f9f9f9;
   font-size: 0.5rem;
   line-height: 1rem;
-  margin-left: 1rem;
+
   margin-right: 2rem;
+
   @media (max-width: 768px) {
     display: none;
   }
