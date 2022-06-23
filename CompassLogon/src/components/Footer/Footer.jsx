@@ -10,12 +10,13 @@ import {
   FooterButtonsNav,
   FooterButtonLogout,
 } from "../../components/Footer/Footer.Styled";
-
+import axios from "axios";
 const COUNTDOWN = 10000;
 
 function Footer() {
   const navigate = useNavigate();
   const [seconds, setSeconds] = useState(COUNTDOWN);
+  const [location, setLocation] = useState();
   useEffect(() => {
     if (seconds === 0) {
       console.log("end of session");
