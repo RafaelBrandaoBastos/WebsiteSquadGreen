@@ -4,7 +4,7 @@ export const FooterBody = styled.div`
   display: flex;
   font-family: Poppins;
   width: 100%;
-  height: 11vh;
+  height: 14.9vh;
   background: #1c1d20;
   color: #f9f9f9;
   justify-content: space-between;
@@ -16,12 +16,15 @@ export const FooterP = styled.p`
   justify-content: center;
   align-items: center;
   width: 45vw;
-  height: 5vh;
+  min-height: 5vh;
   border-right: 1px solid #f9f9f9;
-  font-size: 0.75rem;
+  font-size: 0.5rem;
   line-height: 1rem;
   margin-left: 1rem;
   margin-right: 2rem;
+  @media (max-width: 768px) {
+    display: none;
+  }
 `;
 
 export const FooterTimer = styled.div`
@@ -30,10 +33,16 @@ export const FooterTimer = styled.div`
   flex-direction: row;
   align-items: center;
   margin-left: 2vh;
+  @media (max-width: 768px) {
+    display: none;
+  }
 `;
 export const Refresh = styled.p`
   display: flex;
   flex-direction: column;
+  @media (max-width: 768px) {
+    display: none;
+  }
 `;
 
 export const Time = styled.div`
@@ -43,6 +52,10 @@ export const Time = styled.div`
   margin-right: 5vh;
 
   text-align: center;
+  @media (max-width: 768px) {
+    display: none;
+    margin: 0;
+  }
 `;
 
 export const FooterButtons = styled.div`
@@ -61,6 +74,9 @@ export const FooterButtonsNav = styled.div`
   width: 8rem;
   text-align: center;
   justify-content: center;
+  @media (max-width: 768px) {
+    width: 100%;
+  }
 `;
 
 export const FooterButtonLogout = styled.div`
@@ -73,4 +89,7 @@ export const FooterButtonLogout = styled.div`
   width: 8rem;
   text-align: center;
   justify-content: center;
+  @media (max-width: 768px) {
+    order: -1;
+  }
 `;

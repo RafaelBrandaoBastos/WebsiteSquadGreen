@@ -6,9 +6,12 @@ export const SucessBody = styled.div`
   justify-content: space-between;
   align-items: flex-end;
   width: 98vw;
-  height: 68.7vh;
+  min-height: 68.7vh;
   font-family: Poppins;
   min-height: 33vh;
+  @media screen {
+    height: 100%;
+  }
 `;
 
 export const SucessImage = styled.div`
@@ -18,6 +21,11 @@ export const SucessImage = styled.div`
   background-repeat: no-repeat;
   background-size: contain;
   background-position: left bottom;
+  @media (max-width: 768px) {
+    background-size: cover;
+    width: 50vw;
+    height: 65vh;
+  }
 `;
 
 export const SucessContainer = styled.div`
@@ -41,5 +49,8 @@ export const SucessContainer = styled.div`
     margin-bottom: 2rem;
     font-weight: 400;
     font-size: 1rem;
+  }
+  @media (max-width: 768px) {
+    display: none;
   }
 `;

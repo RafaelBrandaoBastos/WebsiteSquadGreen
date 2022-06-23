@@ -8,6 +8,9 @@ export const HeaderBody = styled.div`
 export const HeaderImage = styled.img`
   width: 18vw;
   margin-left: 1vh;
+  @media (max-width: 768px) {
+    width: 40%;
+  }
 `;
 export const HeaderBodyTime = styled.div`
   display: flex;
@@ -17,6 +20,9 @@ export const HeaderBodyTime = styled.div`
 
   #headerBodyTimeText {
     font-size: 4rem;
+  }
+  @media (max-width: 768px) {
+    display: none;
   }
 `;
 

@@ -1,5 +1,5 @@
 import React from "react";
-import CompassBackground from "../../Assets/CompassBackground.svg";
+
 import { SucessBody, SucessImage, SucessContainer } from "./Sucess.Styled.js";
 import Header from "../../components/Header/Header";
 import Footer from "../../components/Footer/Footer";
