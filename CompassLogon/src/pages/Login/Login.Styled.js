@@ -1,4 +1,6 @@
 import styled from 'styled-components';
+import Notebook from "../../assets/Notebook.png"
+import Logo from "../../assets/Icon.png"
 
 export const Main = styled.div`
     background-color: black;
@@ -32,6 +34,12 @@ export const Tittle = styled.p`
     line-height: 90px;
     line-height: 100%;
     margin-bottom: 20px;
+    -webkit-touch-callout: none;
+    -webkit-user-select: none;
+    -khtml-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
 `
 export const Text = styled.p`
     color: white;
@@ -40,7 +48,15 @@ export const Text = styled.p`
     font-size: 16px;
     line-height: 24px;
     line-height: 100%;
+    -webkit-touch-callout: none;
+    -webkit-user-select: none;
+    -khtml-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
 `
+
+
 
 
 
@@ -56,11 +72,19 @@ export const Picture = styled.div`
     display: none;
     }
 `
-
-export const Image = styled.img`
+export const Image = styled.div`
+    background: url(${Notebook});
     display: flex;
+    justify-content: center;
+    align-items: flex-start;
     height: 937px;
     width: 1080px;
+`
+export const Icon = styled.div`
+    margin-top: 20px;
+    background: url(${Logo});
+    height: 94px;
+    width: 349px;
 `
 
 

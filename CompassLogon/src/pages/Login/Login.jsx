@@ -1,6 +1,6 @@
 import React from 'react'
-import {Main, Picture, Interface, Form, Image, Tittle, Text} from "./Login.Styled.js"
-import Notebook from "../../assets/Notebook.png"
+import {Main, Picture, Interface, Form, Image, Tittle, Text, Icon} from "./Login.Styled.js"
+
 
 
 function Login() {
@@ -15,7 +15,10 @@ function Login() {
       </Interface>
 
       <Picture>
-        <Image src = {Notebook}/>
+        
+        <Image>
+          <Icon/>
+        </Image>
       </Picture>
 
     </Main>
