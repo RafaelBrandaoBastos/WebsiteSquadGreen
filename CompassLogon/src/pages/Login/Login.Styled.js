@@ -77,8 +77,8 @@ export const Image = styled.div`
     display: flex;
     justify-content: center;
     align-items: flex-start;
-    height: 937px;
-    width: 1080px;
+    height: 100vh;
+    width: 100vw;
 `
 export const Icon = styled.div`
     margin-top: 20px;
