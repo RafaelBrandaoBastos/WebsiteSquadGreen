@@ -16,7 +16,13 @@ const COUNTDOWN = 10000;
 function Footer() {
   const navigate = useNavigate();
   const [seconds, setSeconds] = useState(COUNTDOWN);
-  const [location, setLocation] = useState();
+  const [location, setLocation] = useState(false);
+  useEffect(() => {
+    navigator.geolocation.getCurrentPosition((position) => {
+      console.log(position.coords.latitude, position.coords.longitude);
+      setLocation(true);
+    });
+  }, [location == true]);
   useEffect(() => {
     if (seconds === 0) {
       console.log("end of session");
