@@ -10,6 +10,7 @@ export const HeaderBody = styled.div`
   -moz-user-select: none;
   -ms-user-select: none;
   user-select: none;
+  align-items: center;
 `;
 export const HeaderImage = styled.img`
   width: 18vw;
