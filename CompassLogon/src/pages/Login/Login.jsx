@@ -1,8 +1,6 @@
 import React from 'react'
 import {Main, Picture, Interface, Form, Image, Tittle, Text, Icon} from "./Login.Styled.js"
 
-
-
 function Login() {
   return (
     <Main>
