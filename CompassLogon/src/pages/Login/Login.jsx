@@ -1,7 +1,25 @@
 import React from 'react'
+import {Main, Picture, Interface, Form, Image, Tittle, Text, Icon} from "./Login.Styled.js"
 
-export default function Login() {
+function Login() {
   return (
-    <div>Login</div>
+    <Main>
+
+      <Interface>
+        <Form>
+          <Tittle>Olá,</Tittle>
+          <Text>Para continuar navegando de forma segura, efetue o login na rede</Text>
+        </Form>
+      </Interface>
+
+      <Picture>
+        
+        <Image>
+          <Icon/>
+        </Image>
+      </Picture>
+
+    </Main>
   )
 }
+export default Login; 
