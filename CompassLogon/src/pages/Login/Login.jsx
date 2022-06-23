@@ -1,7 +1,11 @@
 import React from 'react'
 
-export default function Login() {
+import Notebook from "../../assets/Notebook.png"
+
+
+function Login() {
   return (
-    <div>Login</div>
+
   )
 }
+export default Login; 
