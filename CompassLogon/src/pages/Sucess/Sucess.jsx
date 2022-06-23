@@ -8,7 +8,7 @@ export default function Sucess() {
     <div>
       <Header />
       <SucessBody>
-        <SucessImage src={CompassBackground} />
+        <SucessImage />
         <SucessContainer>
           <h2 id="h2">Our mission is</h2>
           <p id="p">Nossa missão é</p>

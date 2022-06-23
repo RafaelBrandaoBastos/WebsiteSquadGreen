@@ -1,4 +1,4 @@
-import { createGlobalStyle } from 'styled-components';
+import { createGlobalStyle } from "styled-components";
 
 const GlobalStyle = createGlobalStyle`
 body {
@@ -16,7 +16,7 @@ figure, figcaption, footer, header, hgroup,
 menu, nav, output, ruby, section, summary,
 time, mark, audio, video {
     font-family: 'Poppins';
-	margin: 0;
+	margin: 0 ;
 	padding: 0;
 	border: 0;
 	font-size: 100%;
@@ -28,9 +28,7 @@ article, aside, details, figcaption, figure,
 footer, header, hgroup, menu, nav, section {
 	display: block;
 }
-body {
-	line-height: 1;
-}
+
 ol, ul {
 	list-style: none;
 }
@@ -46,6 +44,15 @@ table {
 	border-collapse: collapse;
 	border-spacing: 0;
 }
+}
+body {
+	
+	background: linear-gradient(105.96deg, #ffffff 0%, #f0f0f0 97.86%);
+	box-shadow: 4px 4px 70px rgba(0, 0, 0, 0.25);
+	margin: 0;
+	width: 100%;
+	height: 100%;
+	
 }
 `;
 

@@ -1,33 +1,45 @@
 import styled from "styled-components";
-
+import CompassBackground from "../../Assets/CompassBackground.svg";
 export const SucessBody = styled.div`
   display: flex;
   flex-direction: row;
   justify-content: space-between;
   align-items: flex-end;
-  width: 100%;
-  min-height: 32vw;
+  width: 98vw;
+  height: 68.7vh;
+  font-family: Poppins;
+  min-height: 33vh;
 `;
 
-export const SucessImage = styled.img`
-  width: 50vh;
+export const SucessImage = styled.div`
+  background-image: url(${CompassBackground});
+  width: 35vw;
+  height: 65vh;
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: left bottom;
 `;
 
 export const SucessContainer = styled.div`
   margin-right: 5vh;
   align-items: center;
   text-align: right;
-  line-height: 0.5rem;
-  margin-bottom: 10vh;
+
   #h2 {
     color: #c12d18;
+    font-weight: 700;
+    font-size: 1.5rem;
   }
   #h1 {
     color: #c12d18;
-    line-height: 2rem;
+    line-height: 2.5rem;
+    font-weight: 700;
+    font-size: 2rem;
   }
   #p {
     color: #222222;
     margin-bottom: 2rem;
+    font-weight: 400;
+    font-size: 1rem;
   }
 `;
