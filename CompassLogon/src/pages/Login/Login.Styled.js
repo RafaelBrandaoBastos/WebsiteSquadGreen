@@ -2,18 +2,18 @@ import styled from 'styled-components';
 import Notebook from "../../assets/Notebook.png"
 import Logo from "../../assets/Icon.png"
 
-export const Main = styled.div`
+export const Body = styled.div`
     background-color: black;
     display: flex;
     width: 100vw;
     height: 100vh;
 `
 
-export const Interface = styled.div`
+export const Main = styled.div`
     display: flex;
     background: rgb(51,56,61);
     background: linear-gradient(180deg, rgba(51,56,61,1) 0%, rgba(28,29,32,1) 100%);
-    height: 100%;
+    height: 100vh;
     width: 50%;
     justify-content: center;
     align-items:center; 
@@ -21,11 +21,21 @@ export const Interface = styled.div`
         width: 100%;
     }
 `
-export const Form = styled.form`
+
+export const Interface = styled.div`
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items:center; 
+    outline-style: solid;
     max-width: 379px;
+    @media (max-width: 768px) {
+    }
+`
+export const Form = styled.form`
+    width: 100%;
     outline-style: solid;
 `
-
 export const Tittle = styled.p`
     color: white;
     font-family: 'Poppins';
@@ -33,7 +43,6 @@ export const Tittle = styled.p`
     font-size: 60px;
     line-height: 90px;
     line-height: 100%;
-    margin-bottom: 20px;
     -webkit-touch-callout: none;
     -webkit-user-select: none;
     -khtml-user-select: none;
@@ -54,8 +63,9 @@ export const Text = styled.p`
     -moz-user-select: none;
     -ms-user-select: none;
     user-select: none;
+    margin-bottom: 20px;
+    margin-top: 20px;
 `
-
 
 
 
