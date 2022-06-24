@@ -1,12 +1,10 @@
 import React from 'react'
 import {ButtonStyled} from'./Button.Styled.js'
 
-
-
 const Button = () => {
 
     return (
-        <ButtonStyled name = "continue" type = "submit">Continuar</ButtonStyled>       
+        <ButtonStyled name = "btn" type = "submit">Continuar</ButtonStyled>       
     )   
 }
 

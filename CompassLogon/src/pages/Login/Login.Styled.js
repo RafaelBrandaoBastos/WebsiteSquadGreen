@@ -8,7 +8,6 @@ export const Body = styled.div`
     width: 100vw;
     height: 100vh;
 `
-
 export const Main = styled.div`
     display: flex;
     background: rgb(51,56,61);
@@ -21,7 +20,6 @@ export const Main = styled.div`
         width: 100%;
     }
 `
-
 export const Interface = styled.div`
     display: flex;
     flex-wrap: wrap;
@@ -35,20 +33,6 @@ export const Interface = styled.div`
 export const Form = styled.form`
     width: 100%;
     outline-style: solid;
-`
-export const Tittle = styled.p`
-    color: white;
-    font-family: 'Poppins';
-    font-style: normal;
-    font-size: 60px;
-    line-height: 90px;
-    line-height: 100%;
-    -webkit-touch-callout: none;
-    -webkit-user-select: none;
-    -khtml-user-select: none;
-    -moz-user-select: none;
-    -ms-user-select: none;
-    user-select: none;
 `
 export const Text = styled.p`
     color: white;
@@ -66,11 +50,20 @@ export const Text = styled.p`
     margin-bottom: 20px;
     margin-top: 20px;
 `
-
-
-
-
-
+export const Tittle = styled.p`
+    color: white;
+    font-family: 'Poppins';
+    font-style: normal;
+    font-size: 60px;
+    line-height: 90px;
+    line-height: 100%;
+    -webkit-touch-callout: none;
+    -webkit-user-select: none;
+    -khtml-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+`
 
 export const Picture = styled.div`
     background-color: red;
