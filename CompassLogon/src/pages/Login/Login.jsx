@@ -1,6 +1,5 @@
-import React from 'react'
 import {Main, Picture, Interface, Form, Image, Tittle, Text, Icon} from "./Login.Styled.js"
-import Button from "../../components/Button/Button"
+import React from 'react'
 
 function Login() {
   return (
@@ -10,7 +9,7 @@ function Login() {
         <Form>
           <Tittle>Olá,</Tittle>
           <Text>Para continuar navegando de forma segura, efetue o login na rede</Text> 
-          <Button />    
+             
         </Form>
       </Interface>
 
