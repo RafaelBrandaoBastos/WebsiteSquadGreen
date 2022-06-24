@@ -9,8 +9,8 @@ function Login() {
           <Tittle>Olá,</Tittle>
           <Text>Para continuar navegando de forma segura, efetue o login na rede</Text> 
           <Form>
-              <ButtonStyled/>     
-            </Form>
+            <ButtonStyled/>     
+          </Form>
         </Interface>     
       </Main>
 

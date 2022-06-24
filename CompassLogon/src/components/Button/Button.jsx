@@ -1,7 +1,6 @@
 import React from 'react'
-import { useState, useEffect } from "react";
 import {ButtonStyled} from'./Button.Styled.js'
-import { useNavigate } from "react-router-dom";
+
 
 
 const Button = () => {
