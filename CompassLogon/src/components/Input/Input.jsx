@@ -1,9 +1,20 @@
 import React from "react";
-import {InputStyle} from "./Input.Styled"
+import {InputUser, InputPassword, Label} from "./Input.Styled"
 
-const Input = ({type, id, placeholder})=>{
+
+
+const Input = (props)=>{
+  
+  if (props.placeholder=="Usuário")
+  return(   
+  <>
+  <Label htmlFor={props.id}>Login</Label>
+  <InputUser type={props.type} id={props.id} placeholder={props.placeholder}/>  
+  </>
+  )
+  if (props.placeholder=="Senha")
   return(
-   <InputStyle type={type} id={id} placeholder={placeholder} />
+  <InputPassword type={props.type} id={props.id} placeholder={props.placeholder}/>
   )
 };
 
