@@ -34,8 +34,7 @@ export const Interface = styled.div`
     }
 `
 export const Form = styled.form`
-    margin-top: 30%;
-    margin-bottom: 22%;
+    margin-top: 10%;
     width: 100%;
     display: flex;
     flex-wrap: wrap;   
