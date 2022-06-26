@@ -4,7 +4,7 @@ import Vector from "../../assets/icon-password.svg";
 
 export const InputUser = styled.input`
 width: 95%;
-height: 6.8vh;
+height: 5.5vh;
 background: #26292C;
 border: 1px solid #FFFFFF;
 border-radius: 50px;
@@ -20,6 +20,10 @@ background-repeat: no-repeat;
 background-position: 20.8em;
 background-size: contain;
 margin-top: 5%;
+
+@media (max-width: 768px) {
+    background-position: 100%;      
+}
 
 &::placeholder {
 font-family: 'Poppins';
