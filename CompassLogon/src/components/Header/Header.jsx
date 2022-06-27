@@ -15,9 +15,10 @@ function Header() {
   const fetchWeather = (url) => {
     fetch(url)
       .then((response) => response.json())
-      .then((data) => weatherDetails(data));
+      .then((data) => console.log(data[1].country));
   };
   const weatherDetails = (info) => {
+    const city = info[0].county;
     console.log(info);
   };
 
@@ -25,7 +26,8 @@ function Header() {
     navigator.geolocation.getCurrentPosition((position) => {
       let { latitude, longitude } = position.coords;
       console;
-      let url = `https://api.openweathermap.org/data/2.5/onecall?lat=${latitude}&lon=${longitude}&appid=${APIkey}`;
+      // let url = `https://api.openweathermap.org/data/2.5/onecall?lat=${latitude}&lon=${longitude}&appid=${APIkey}`;
+      let url = `http://api.positionstack.com/v1/reverse?access_key=d98a45ec61e6bdccdf661642fd349417&query=${latitude},${longitude}`;
 
       console.log(url);
       fetchWeather(url);
