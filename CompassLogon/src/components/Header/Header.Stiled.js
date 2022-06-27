@@ -25,7 +25,8 @@ export const HeaderBodyTime = styled.div`
   flex-direction: column;
   text-align: center;
   #headerBodyTimeText {
-    font-size: 4rem;
+    font-size: 5rem;
+    font-weight: 700;
   }
   @media (max-width: 768px) {
     display: none;
@@ -37,4 +38,7 @@ export const HeaderBodyWeather = styled.div`
   flex-direction: column;
   text-align: right;
   margin-right: 4vh;
+  @media (max-width: 768px) {
+    margin-right: 2vh;
+  }
 `;

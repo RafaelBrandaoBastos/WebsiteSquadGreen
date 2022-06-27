@@ -10,23 +10,10 @@ import {
   FooterButtonsNav,
   FooterButtonLogout,
 } from "../../components/Footer/Footer.Styled";
-
+import Timer from "../Timer/Timer";
 const COUNTDOWN = 600;
 
 function Footer() {
-  const navigate = useNavigate();
-  const [seconds, setSeconds] = useState(COUNTDOWN);
-
-  useEffect(() => {
-    if (seconds === 0) {
-      console.log("end of session");
-      navigate("/");
-      return;
-    }
-    setTimeout(() => {
-      setSeconds((state) => state - 1);
-    }, 1000);
-  }, [seconds]);
   return (
     <div>
       <FooterBody>
@@ -45,10 +32,7 @@ function Footer() {
             <p>Application</p>
             <p>refresh in </p>
           </Refresh>
-          <Time>
-            <h1>{seconds}</h1>
-            <p>seconds</p>
-          </Time>
+          <Timer />
         </FooterTimer>
         {/* MUDAR OS BUTTONS PARA UM COMPONENTE  */}
         <FooterButtons>
