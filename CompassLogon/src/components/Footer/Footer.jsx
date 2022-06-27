@@ -10,19 +10,13 @@ import {
   FooterButtonsNav,
   FooterButtonLogout,
 } from "../../components/Footer/Footer.Styled";
-import axios from "axios";
-const COUNTDOWN = 10000;
+
+const COUNTDOWN = 600;
 
 function Footer() {
   const navigate = useNavigate();
   const [seconds, setSeconds] = useState(COUNTDOWN);
-  const [location, setLocation] = useState(false);
-  useEffect(() => {
-    navigator.geolocation.getCurrentPosition((position) => {
-      console.log(position.coords.latitude, position.coords.longitude);
-      setLocation(true);
-    });
-  }, [location == true]);
+
   useEffect(() => {
     if (seconds === 0) {
       console.log("end of session");

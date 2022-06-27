@@ -6,18 +6,14 @@ export const SucessBody = styled.div`
   justify-content: space-between;
   align-items: flex-end;
   max-width: 98vw;
-  min-height: 68.7vh;
+  height: 70vh;
   font-family: Poppins;
-  min-height: 33vh;
   -webkit-touch-callout: none;
   -webkit-user-select: none;
   -khtml-user-select: none;
   -moz-user-select: none;
   -ms-user-select: none;
   user-select: none;
-  @media screen {
-    height: 100%;
-  }
 `;
 
 export const SucessImage = styled.div`
@@ -37,23 +33,24 @@ export const SucessContainer = styled.div`
   margin-right: 5vh;
   align-items: center;
   text-align: right;
+  margin-bottom: 4vh;
 
   #h2 {
     color: #c12d18;
     font-weight: 700;
-    font-size: 1.5rem;
+    font-size: 3vw;
   }
   #h1 {
     color: #c12d18;
-    line-height: 2.5rem;
+    line-height: 4vw;
     font-weight: 700;
     font-size: 2rem;
   }
   #p {
     color: #222222;
-    margin-bottom: 2rem;
+    margin-bottom: 1vw;
     font-weight: 400;
-    font-size: 1rem;
+    font-size: 1.5vw;
   }
   @media (max-width: 768px) {
     display: none;
