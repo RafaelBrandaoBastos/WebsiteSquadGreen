@@ -31,26 +31,26 @@ export const SucessImage = styled.div`
 
 export const SucessContainer = styled.div`
   margin-right: 5vh;
-  align-items: center;
+  align-self: center;
   text-align: right;
   margin-bottom: 4vh;
 
   #h2 {
     color: #c12d18;
     font-weight: 700;
-    font-size: 3vw;
+    font-size: 2vw;
   }
   #h1 {
     color: #c12d18;
     line-height: 4vw;
     font-weight: 700;
-    font-size: 2rem;
+    font-size: 2.2rem;
   }
   #p {
     color: #222222;
-    margin-bottom: 1vw;
+
     font-weight: 400;
-    font-size: 1.5vw;
+    font-size: 1vw;
   }
   @media (max-width: 768px) {
     display: none;

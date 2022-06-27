@@ -17,7 +17,6 @@ export const FooterBody = styled.div`
   user-select: none;
   @media (max-width: 768px) {
     justify-content: space-between;
-    height: 16.7vh;
   }
 `;
 export const FooterP = styled.p`
