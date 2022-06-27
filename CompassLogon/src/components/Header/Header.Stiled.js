@@ -3,14 +3,15 @@ export const HeaderBody = styled.div`
   display: flex;
   justify-content: space-between;
   font-family: Poppins;
-  height: 15vh;
+  height: 12.5vh;
   -webkit-touch-callout: none;
   -webkit-user-select: none;
   -khtml-user-select: none;
   -moz-user-select: none;
   -ms-user-select: none;
   user-select: none;
-  align-items: center;
+  align-items: flex-start;
+  padding-top: 2.5vh;
 `;
 export const HeaderImage = styled.img`
   width: 18vw;
@@ -22,9 +23,7 @@ export const HeaderImage = styled.img`
 export const HeaderBodyTime = styled.div`
   display: flex;
   flex-direction: column;
-
   text-align: center;
-
   #headerBodyTimeText {
     font-size: 4rem;
   }
@@ -38,5 +37,4 @@ export const HeaderBodyWeather = styled.div`
   flex-direction: column;
   text-align: right;
   margin-right: 4vh;
-  margin-top: 2vh;
 `;
