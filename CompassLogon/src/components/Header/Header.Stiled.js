@@ -3,7 +3,7 @@ export const HeaderBody = styled.div`
   display: flex;
   justify-content: space-between;
   font-family: Poppins;
-  height: 18.4vh;
+  height: 15vh;
   -webkit-touch-callout: none;
   -webkit-user-select: none;
   -khtml-user-select: none;

@@ -4,7 +4,7 @@ export const FooterBody = styled.div`
   display: flex;
   font-family: Poppins;
   width: 100%;
-  height: 14.9vh;
+  height: 15vh;
   background: #1c1d20;
   color: #f9f9f9;
   justify-content: space-between;
@@ -28,7 +28,7 @@ export const FooterP = styled.p`
   width: 45vw;
   min-height: 5vh;
   border-right: 1px solid #f9f9f9;
-  font-size: 0.5rem;
+  font-size: 0.8vw;
   line-height: 1rem;
 
   margin-right: 2rem;
