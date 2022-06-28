@@ -11,7 +11,6 @@ import {
   FooterButtonLogout,
 } from "../../components/Footer/Footer.Styled";
 import Timer from "../Timer/Timer";
-const COUNTDOWN = 600;
 
 function Footer() {
   return (

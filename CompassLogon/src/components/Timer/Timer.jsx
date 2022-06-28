@@ -3,7 +3,6 @@ import { useNavigate } from "react-router-dom";
 import { Time, TimerH1, TimerP } from "./Timer.Styled";
 const COUNTDOWN = 600;
 function Timer() {
-  
   const navigate = useNavigate();
   const [seconds, setSeconds] = useState(COUNTDOWN);
   useEffect(() => {
@@ -14,7 +13,6 @@ function Timer() {
     }
     setTimeout(() => {
       setSeconds((state) => state - 1);
-      console.log(seconds);
     }, 1000);
   }, [seconds]);
   return (
