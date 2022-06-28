@@ -19,7 +19,6 @@ function Weather() {
       `http://openweathermap.org/img/wn/${info.current.weather[0].icon}@2x.png`
     );
     setTemp((info.current.temp - 273).toFixed(0));
-    console.log(info);
   };
   const fetchCity = (url) => {
     fetch(url)
@@ -34,7 +33,7 @@ function Weather() {
   useEffect(() => {
     navigator.geolocation.getCurrentPosition((position) => {
       let { latitude, longitude } = position.coords;
-      console;
+
       let urlWeather = `https://api.openweathermap.org/data/2.5/onecall?lat=${latitude}&lon=${longitude}&appid=${APIkey}`;
       let urlCity = `http://api.positionstack.com/v1/reverse?access_key=d98a45ec61e6bdccdf661642fd349417&query=${latitude},${longitude}&limit1`;
       fetchCity(urlCity);
@@ -42,7 +41,6 @@ function Weather() {
       setLocation(true);
     });
   }, [location == true]);
-  const icons = ``;
   return (
     <div>
       <p>
