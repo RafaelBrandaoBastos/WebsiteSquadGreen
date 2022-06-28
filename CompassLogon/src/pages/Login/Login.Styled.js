@@ -37,7 +37,7 @@ export const Form = styled.form`
     margin-top: 10%;
     width: 100%;
     display: flex;
-    flex-wrap: wrap;   
+    flex-wrap: wrap; 
 `
 
 export const ContainerIcon = styled.div`

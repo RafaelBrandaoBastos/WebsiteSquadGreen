@@ -1,21 +1,18 @@
 import React from "react";
-import {InputUser, ContainerInput, InputPassword, Label, ErrorMessage} from "./Input.Styled"
+import {InputUser, InputPassword} from "./Input.Styled"
 
-const Input = (props)=>{
- 
-  if (props.placeholder=="Usuário")
+const Input = ({type, placeholder, register, className})=>{
+
+  if (placeholder=="Usuário")
   return(   
-  <>
-  <Label htmlFor={props.id}>Login</Label>
-  <InputUser type={props.type} name={props.name} placeholder={props.placeholder}  {...props.register(props.name, {required: true})} />
-  </>  
+  
+  <InputUser type={type} placeholder={placeholder} {...register} className={className} />
+
   )
-  if (props.placeholder=="Senha")
+  if (placeholder=="Senha")
   return(
-  <ContainerInput>
-  <InputPassword type={props.type} name={props.name} placeholder={props.placeholder} {...props.register(props.name, {required: true})} />
-  {props.errors.password && <ErrorMessage>Ops, usuário ou senha inválidos.<br/>Tente novamente!</ErrorMessage>} 
-  </ContainerInput>
+  <InputPassword type={type} placeholder={placeholder} {...register} className={className}/>
+
   )
 };
 

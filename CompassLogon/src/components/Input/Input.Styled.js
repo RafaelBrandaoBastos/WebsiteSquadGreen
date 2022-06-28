@@ -6,7 +6,7 @@ export const InputUser = styled.input`
 width: 95%;
 height: 5.5vh;
 background: #26292C;
-border: 1px solid #FFFFFF;
+border: 1px solid #FFFFFF; 
 border-radius: 50px;
 font-family: 'Poppins';
 font-style: normal;
@@ -20,6 +20,10 @@ background-repeat: no-repeat;
 background-position: 20.8em;
 background-size: contain;
 margin-top: 5%;
+
+&.invalid{
+    border: 1px solid #E9B425;
+}
 
 @media (max-width: 768px) {
     background-position: 100%;      
@@ -59,10 +63,6 @@ background-image: url(${Vector});
 min-height: 5.5vh;
 `;
 
-export const InputError = styled(InputUser)`
-border: 1px solid #E9B425;
-`;
-
 export const ErrorMessage = styled.span`
 font-family: 'Poppins';
 font-style: normal;
@@ -71,4 +71,5 @@ font-size: 16px;
 line-height: 24px;
 text-align: center;
 color: #E9B425;
+margin: auto;
 `;
