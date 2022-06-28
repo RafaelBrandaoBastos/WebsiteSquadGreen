@@ -16,6 +16,7 @@ function Header() {
   const [monthString, setMonthString] = useState();
   const [time, setTime] = useState();
   const [clockState, setClockState] = useState();
+  const [clock, setClock] = useState(false);
 
   const getDate = () => {
     const today = new Date();
@@ -104,6 +105,7 @@ function Header() {
         return;
       }
       setClockState(time.substring(0, 5));
+      setClock(true);
     }, 1000);
   }, [time]);
 
@@ -111,12 +113,17 @@ function Header() {
     <div>
       <HeaderBody>
         <HeaderImage src={CompassHeader} />
-        <HeaderBodyTime>
-          <h1 id="headerBodyTimeText">{clockState}</h1>
-          <p>
-            {weekDay}, {day} de {monthString} de {year}
-          </p>
-        </HeaderBodyTime>
+        {!clock ? (
+          <div>Carregando...</div>
+        ) : (
+          <HeaderBodyTime>
+            <h1 id="headerBodyTimeText">{clockState}</h1>
+            <p>
+              {weekDay}, {day} de {monthString} de {year}
+            </p>
+          </HeaderBodyTime>
+        )}
+
         <HeaderBodyWeather>
           <Weather />
         </HeaderBodyWeather>
