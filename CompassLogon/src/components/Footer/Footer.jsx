@@ -12,9 +12,10 @@ import {
 } from "../../components/Footer/Footer.Styled";
 import Timer from "../Timer/Timer";
 import { Button } from "../Button/Button";
-const [countdown, setCountdown] = useState(600);
+
 
 function Footer() {
+  const [countdown, setCountdown] = useState(600);
   return (
     <div>
       <FooterBody>
