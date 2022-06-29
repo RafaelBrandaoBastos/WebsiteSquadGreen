@@ -13,7 +13,6 @@ function Timer() {
     }
     setTimeout(() => {
       setSeconds((state) => state - 1);
-      console.log(seconds);
     }, 1000);
   }, [seconds]);
   return (

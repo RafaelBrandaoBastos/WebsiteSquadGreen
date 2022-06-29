@@ -5,8 +5,11 @@ export const WeatherDetails = styled.div`
   align-items: center;
 `;
 export const WeatherImage = styled.img`
-  width: 5vw;
-  background: linear-gradient(90.16deg, #33383d 0%, #1c1d20 100%);
+  width: 4vw;
+  background: linear-gradient(
+    rgba(51, 56, 61, 0.3) 0%,
+    rgba(28, 29, 32, 0.3) 50%
+  );
   border-radius: 50%;
   @media (max-width: 768px) {
     width: 8vw;
