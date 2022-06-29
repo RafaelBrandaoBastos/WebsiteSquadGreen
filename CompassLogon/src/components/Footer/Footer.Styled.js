@@ -72,6 +72,13 @@ export const FooterButtons = styled.div`
   display: flex;
   flex-direction: row;
   height: 100%;
+
+  @media (max-width: 768px) {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    width: 100%;
+  }
+
 `;
 
 export const FooterButtonsNav = styled.div`

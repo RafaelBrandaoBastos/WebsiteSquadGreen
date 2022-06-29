@@ -11,6 +11,8 @@ import {
   FooterButtonLogout,
 } from "../../components/Footer/Footer.Styled";
 import Timer from "../Timer/Timer";
+import {Button} from "../Button/Button";
+const COUNTDOWN = 600;
 
 function Footer() {
   return (
@@ -35,13 +37,8 @@ function Footer() {
         </FooterTimer>
         {/* MUDAR OS BUTTONS PARA UM COMPONENTE  */}
         <FooterButtons>
-          <FooterButtonsNav>
-            <p>Continuar</p>
-            <p>Navegando</p>
-          </FooterButtonsNav>
-          <FooterButtonLogout>
-            <p>Logout</p>
-          </FooterButtonLogout>
+          <Button text="Continuar Navegando"/>
+          <Button className="logout" text="Logout"/>
         </FooterButtons>
         {/* MUDAR OS BUTTONS PARA UM COMPONENTE  */}
       </FooterBody>
