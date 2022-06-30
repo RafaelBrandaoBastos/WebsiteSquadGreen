@@ -10,19 +10,11 @@ import {
 import Clock from "../Clock/Clock";
 
 function Header() {
-
-  const [clock, setClock] = useState(true);
-
   return (
     <div>
       <HeaderBody>
         <HeaderImage src={CompassHeader} />
-        {!clock ? (
-          <div>Carregando...</div>
-        ) : (
-          <Clock/>
-        )}
-
+        <Clock />
         <HeaderBodyWeather>
           <Weather />
         </HeaderBodyWeather>
