@@ -1,6 +1,6 @@
 import styled from "styled-components";
 
-export const ButtonWrapper = styled.a`
+export const ButtonWrapper = styled.button`
   display: flex;
   flex-direction: column;
   background: #ffffff;
@@ -9,14 +9,20 @@ export const ButtonWrapper = styled.a`
   width: 8rem;
   text-align: center;
   justify-content: center;
+  align-items: center;
+  border: none;
+  font-family: Poppins;
   &:hover {
     cursor: pointer;
+    font-size: 0.9rem;
   }
   &.logout {
     background: linear-gradient(90.16deg, #33383d 0%, #1c1d20 100%);
     color: white;
     grid-column: 1/2;
     grid-row: 1/3;
+    text-align: center;
+    justify-content: center;
   }
   @media (max-width: 768px) {
     width: 100%;

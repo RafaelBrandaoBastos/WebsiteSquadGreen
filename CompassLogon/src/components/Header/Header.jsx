@@ -10,7 +10,9 @@ import {
 import Clock from "../Clock/Clock";
 
 function Header() {
+
   const [clock, setClock] = useState(true);
+
   return (
     <div>
       <HeaderBody>

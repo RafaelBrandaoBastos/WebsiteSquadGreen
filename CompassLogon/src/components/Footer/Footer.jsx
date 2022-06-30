@@ -4,18 +4,32 @@ import {
   FooterBody,
   FooterP,
   FooterTimer,
-  Time,
   Refresh,
   FooterButtons,
-  FooterButtonsNav,
-  FooterButtonLogout,
 } from "../../components/Footer/Footer.Styled";
 import Timer from "../Timer/Timer";
 import { Button } from "../Button/Button";
 
-
 function Footer() {
   const [countdown, setCountdown] = useState(600);
+  const [startCountdown, setStartCountdown] = useState(false);
+  const navigate = useNavigate();
+
+  if (!startCountdown) {
+    setStartCountdown(true);
+    setInterval(() => {
+      setCountdown((state) => state - 1);
+    }, 1000);
+  }
+
+  useEffect(() => {
+    if (countdown === 0) {
+      console.log("end of session");
+      navigate("/");
+      return;
+    }
+  }, [countdown]);
+
   return (
     <div>
       <FooterBody>
@@ -34,14 +48,25 @@ function Footer() {
             <p>Application</p>
             <p>refresh in </p>
           </Refresh>
-          <Timer />
+          <Timer countdown={countdown} />
         </FooterTimer>
-        {/* MUDAR OS BUTTONS PARA UM COMPONENTE  */}
+
         <FooterButtons>
-          <Button text="Continuar Navegando" />
-          <Button className="logout" text="Logout" />
+          <Button
+            className="nav"
+            text="Continuar Navegando"
+            onClick={(e) => {
+              setCountdown(600);
+            }}
+          />
+          <Button
+            className="logout"
+            text="Logout"
+            onClick={(e) => {
+              navigate("/");
+            }}
+          />
         </FooterButtons>
-        {/* MUDAR OS BUTTONS PARA UM COMPONENTE  */}
       </FooterBody>
     </div>
   );
