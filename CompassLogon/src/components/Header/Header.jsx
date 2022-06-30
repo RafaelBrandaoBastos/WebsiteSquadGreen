@@ -26,8 +26,7 @@ function Header() {
     setDay(today.getDate());
     let currentDay = today.getDay();
     getWeekDay(currentDay);
-    console.log(weekDay);
-    console.log(day, month, year);
+  
   };
   const getWeekDay = (week) => {
     switch (week) {
