@@ -29,6 +29,7 @@ function Footer() {
       return;
     }
   }, [countdown]);
+
   return (
     <div>
       <FooterBody>

@@ -50,6 +50,7 @@ export const FooterTimer = styled.div`
 export const Refresh = styled.p`
   display: flex;
   flex-direction: column;
+  font-size: 14px;
   @media (max-width: 768px) {
     display: none;
   }
