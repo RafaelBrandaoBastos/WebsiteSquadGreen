@@ -56,7 +56,6 @@ function Footer() {
             text="Continuar Navegando"
             onClick={(e) => {
               setCountdown(600);
-              console.log(countdown);
             }}
           />
           <Button
