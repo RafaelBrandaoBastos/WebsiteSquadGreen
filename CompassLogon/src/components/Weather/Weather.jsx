@@ -25,6 +25,7 @@ function Weather() {
       );
       setTemp((info.current.temp - 273).toFixed(0));
       setWeather(true);
+      console.log(info);
     };
 
     const cityDetails = (info) => {
@@ -32,7 +33,8 @@ function Weather() {
       setStates(info.data[0].region_code);
       setLocation(true);
     };
-  }, [location == true]);
+  }, [location]);
+
   return (
     <div>
       {!location && !weather ? (

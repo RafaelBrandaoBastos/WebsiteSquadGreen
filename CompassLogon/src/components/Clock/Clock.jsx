@@ -85,9 +85,6 @@ export const Clock = () => {
         break;
     }
   };
-  useEffect(() => {
-    getDate();
-  }, [day]);
 
   useEffect(() => {
     setTimeout(() => {
@@ -99,6 +96,7 @@ export const Clock = () => {
       setClockState(time.substring(0, 5));
       setClock(true);
     }, 1000);
+    getDate();
   }, [time]);
 
   return (
