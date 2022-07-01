@@ -8,7 +8,7 @@ import {
   FooterButtons,
 } from "../../components/Footer/Footer.Styled";
 import Timer from "../Timer/Timer";
-import { Button } from "../Button/Button";
+import { ButtonSucess } from "../ButtonSucess/ButtonSucess";
 
 function Footer() {
   const [countdown, setCountdown] = useState(600);
@@ -52,14 +52,14 @@ function Footer() {
         </FooterTimer>
 
         <FooterButtons>
-          <Button
+          <ButtonSucess
             className="nav"
             text="Continuar Navegando"
             onClick={(e) => {
               setCountdown(600);
             }}
           />
-          <Button
+          <ButtonSucess
             className="logout"
             text="Logout"
             onClick={(e) => {
