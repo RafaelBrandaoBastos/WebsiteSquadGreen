@@ -1,25 +1,25 @@
 import styled from "styled-components";
 
 export const ButtonStyled = styled.button`
-    border:none;
-    width: 100%;
-    height: 67px;
-    background-color: #cf2e0e; 
-    border-radius: 100px;
-    font-family: 'Poppins';
-    color: white;
-    font-style: Bold;
-    font-size: 18px;
-    line-height: 27px;
-    line-height: 100%; 
-    margin-top: 10%;
+  border: none;
+  width: 100%;
+  height: 67px;
+  background-color: #cf2e0e;
+  border-radius: 100px;
+  font-family: "Poppins";
+  color: white;
+  font-style: Bold;
+  font-size: 18px;
+  line-height: 27px;
+  line-height: 100%;
+  margin-top: 10%;
 
-    @media (max-width: 768px) {
+  @media (max-width: 768px) {
     margin-top: 5%;
-    }
+  }
 
-    &:hover {
-        background-color: #f22e07; 
-    }
-
-`
+  &:hover {
+    background-color: #f22e07;
+    cursor: pointer;
+  }
+`;
