@@ -12,6 +12,7 @@ export const Main2 = styled.div`
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
+    align-items: center;
 `
 export const Button = styled.button`
     margin-right: 10%;
@@ -23,6 +24,7 @@ export const Button = styled.button`
     font-family: 'Poppins';
     border-radius: 45px;
     width: 30%;
+    height: 6vh;
     color: white;
     font-style: Bold;
     font-size: 15px;
@@ -40,10 +42,9 @@ export const MSG = styled.label`
     -moz-user-select: none;
     -ms-user-select: none;
     user-select: none;
-    margin-bottom: 20px;
-    margin-top: 20px;
-    @media (max-width: 768px) {
-         
+    margin-top: 10px;
+    @media (max-width: 340px) {
+        margin-bottom: 20px; 
     }
 `
 export const MainText = styled.p`   
@@ -59,8 +60,8 @@ export const MainText = styled.p`
     -moz-user-select: none;
     -ms-user-select: none;
     user-select: none;
-    margin-bottom: 20px;
-    margin-top: 20px;
+    margin-bottom: 10px;
+    margin-top: 10px;
 `
 export const TextRed = styled.label`   
     color: #cf2e0e;
