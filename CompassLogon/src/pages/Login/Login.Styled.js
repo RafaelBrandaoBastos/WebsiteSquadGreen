@@ -8,9 +8,9 @@ export const Body = styled.div`
     width: 100vw;
     height: 100vh;
 `
-
 export const Main = styled.div`
     display: flex;
+    flex-wrap: wrap;
     background: rgb(51,56,61);
     background: linear-gradient(180deg, rgba(51,56,61,1) 0%, rgba(28,29,32,1) 100%);
     height: 100vh;
@@ -19,37 +19,38 @@ export const Main = styled.div`
     align-items:center; 
     @media (max-width: 768px) {
         width: 100%;
+        align-items:flex-start;
     }
 `
-
 export const Interface = styled.div`
+    padding: 15px;
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
     align-items:center; 
-    outline-style: solid;
     max-width: 379px;
+    justify-content: flex-start;
     @media (max-width: 768px) {
     }
 `
 export const Form = styled.form`
+    margin-top: 10%;
     width: 100%;
-    outline-style: solid;
+    display: flex;
+    flex-wrap: wrap; 
 `
-export const Tittle = styled.p`
-    color: white;
-    font-family: 'Poppins';
-    font-style: normal;
-    font-size: 60px;
-    line-height: 90px;
-    line-height: 100%;
-    -webkit-touch-callout: none;
-    -webkit-user-select: none;
-    -khtml-user-select: none;
-    -moz-user-select: none;
-    -ms-user-select: none;
-    user-select: none;
+
+export const ContainerIcon = styled.div`
+    display: none;
+        @media (max-width: 768px) {
+        width: 100%;
+        height: 10%;
+        display: flex;
+        flex-wrap: wrap; 
+        justify-content: center; 
+        }
 `
+
 export const Text = styled.p`
     color: white;
     font-family: 'Poppins';
@@ -66,14 +67,22 @@ export const Text = styled.p`
     margin-bottom: 20px;
     margin-top: 20px;
 `
-
-
-
-
-
+export const Tittle = styled.p`
+    color: white;
+    font-family: 'Poppins';
+    font-style: normal;
+    font-size: 60px;
+    line-height: 90px;
+    line-height: 100%;
+    -webkit-touch-callout: none;
+    -webkit-user-select: none;
+    -khtml-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+`
 
 export const Picture = styled.div`
-    background-color: red;
     display: flex;
     flex-wrap: nowrap;
     width: 50%;
@@ -91,12 +100,25 @@ export const Image = styled.div`
     width: 100vw;
 `
 export const Icon = styled.div`
-    margin-top: 20px;
     background: url(${Logo});
+    background-repeat: no-repeat;
+    display: flex;
+    border: none;
+    margin: 0px;
     height: 94px;
     width: 349px;
+    padding-right: 15%;
+    @media (max-width: 349px) {
+        background-position: center;
+        background-size: contain;
+        background-repeat: no-repeat;
+        }
+        
 `
-
+export const Btncontainer = styled.div`
+    width: 100%;
+    height: 15vh;
+`
 
 
 

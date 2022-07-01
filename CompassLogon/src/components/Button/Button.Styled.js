@@ -12,7 +12,12 @@ export const ButtonStyled = styled.button`
     font-size: 18px;
     line-height: 27px;
     line-height: 100%; 
-    
+    margin-top: 10%;
+
+    @media (max-width: 768px) {
+    margin-top: 5%;
+    }
+
     &:hover {
         background-color: #f22e07; 
     }
