@@ -1,10 +1,12 @@
-import React from "react";
-import { ButtonWrapper } from "./Button.Styled";
 
-export const Button = ({ text, className, onClick }) => {
-  return (
-    <ButtonWrapper className={className} onClick={onClick}>
-      {text}
-    </ButtonWrapper>
-  );
-};
+import React from 'react'
+import {ButtonStyled} from'./Button.Styled.js'
+
+const Button = (props) => {
+
+    return (
+        <ButtonStyled name = {props.name} type = {props.type}>Continuar</ButtonStyled>       
+    )   
+}
+
+export default Button;
