@@ -67,3 +67,4 @@ export const MainText = styled.p`
 export const TextRed = styled.label`
   color: #cf2e0e;
 `;
+

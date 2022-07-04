@@ -118,6 +118,10 @@ export const Icon = styled.div`
 export const Btncontainer = styled.div`
     width: 100%;
     height: 15vh;
+    @media (max-width: 300px) {
+        height: 5%;
+        }
+      
 `
 
 
